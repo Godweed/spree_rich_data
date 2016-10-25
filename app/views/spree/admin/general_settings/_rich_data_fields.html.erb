@@ -1,0 +1,79 @@
+<div class="row">
+  <div class="col-md-12">
+    <div class="form-group" data-hook="admin_general_setting_input_show_entity_markup">
+      <%= f.check_box :show_entity_markup, class: 'form-control'  %>
+      <%= f.label :show_entity_markup %>
+      <%= f.error_message_on :show_entity_markup %>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-md-6">
+    <div class="form-group"  data-hook="admin_general_setting_facebook_id">
+      <%= f.label :facebook_id %>
+      <%= f.text_field :facebook_id,
+          class: 'form-control',
+          placeholder: '1234578'  %>
+      <%= f.error_message_on :facebook_id %>
+      <small><u><%= link_to Spree.t('admin.general_settings.edit.find_your_id', item: 'Facebook'), 'http://findmyfbid.com', target: '_blank' %></u></small>
+    </div>
+  </div>
+
+  <div class="col-md-6">
+    <div class="form-group"  data-hook="admin_general_setting_twitter_id">
+      <%= f.label :twitter_id %>
+      <%= f.text_field :twitter_id, class: 'form-control',
+          placeholder: '1234578'  %>
+      <%= f.error_message_on :twitter_id %>
+      <small><u><%= link_to Spree.t('admin.general_settings.edit.find_your_id', item: 'Twitter'), 'http://gettwitterid.com', target: '_blank' %></u></small>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-md-6">
+    <div class="form-group"  data-hook="admin_general_setting_social_image_url">
+      <%= f.label :social_image_url %>
+      <%= f.text_field :social_image_url, class: 'form-control'  %>
+      <%= f.error_message_on :social_image_url %>
+    </div>
+  </div>
+  <div class="col-md-6">
+    <div class="form-group"  data-hook="admin_general_setting_facebook_url">
+      <%= f.label :facebook_url %>
+      <%= f.text_field :facebook_url, class: 'form-control',
+          placeholder: 'https://www.facebook.com/ExampleStore'  %>
+      <%= f.error_message_on :facebook_url %>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-6">
+    <div class="form-group"  data-hook="admin_general_setting_linkedin_url">
+      <%= f.label :linkedin_url %>
+      <%= f.text_field :linkedin_url, class: 'form-control',
+          placeholder: 'https://www.linkedin.com/company/ExampleStore'  %>
+      <%= f.error_message_on :linkedin_url %>
+    </div>
+  </div>
+  <div class="col-md-6">
+    <div class="form-group"  data-hook="admin_general_setting_pinterest_url">
+      <%= f.label :pinterest_url %>
+      <%= f.text_field :pinterest_url, class: 'form-control',
+          placeholder: 'https://pinterest.com/ExampleStore'  %>
+      <%= f.error_message_on :pinterest_url %>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-md-6">
+    <div class="form-group"  data-hook="admin_general_setting_twitter_url">
+      <%= f.label :twitter_url %>
+      <%= f.text_field :twitter_url, class: 'form-control',
+          placeholder: 'https://twitter.com/ExampleStore'  %>
+      <%= f.error_message_on :twitter_url %>
+    </div>
+  </div>
+</div>
